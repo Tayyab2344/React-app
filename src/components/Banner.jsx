@@ -1,5 +1,5 @@
 import React from "react";
-import {Typed} from "react-typed";
+
 
 const Banner = () => {
   return (
@@ -10,13 +10,7 @@ const Banner = () => {
           Grow with us
         </h1>
         <h2 className="text-white font-bold text-2xl md:text-5xl md:py-6">
-          Learn{" "}
-          <Typed
-            strings={["HTML", "CSS", "JavaScript", "React"]}
-            typeSpeed={40}
-            backSpeed={50}
-            loop={true}
-          />
+          Learn
         </h2>
       </div>
     </div>
