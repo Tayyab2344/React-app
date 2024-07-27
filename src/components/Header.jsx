@@ -10,12 +10,16 @@ const Header = () => {
         {toggle ? (
           <AiOutlineClose
             onClick={() => settoggle(!toggle)}
-            className="text-white text-2xl md:hidden block "
+            className={`text-white text-2xl md:hidden block ${
+              toggle ? "animate-fadeIn" : "animate-fadeOut"
+            }`}
           ></AiOutlineClose>
         ) : (
           <AiOutlineMenu
             onClick={() => settoggle(!toggle)}
-            className="text-white text-2xl md:hidden block"
+            className={`text-white text-2xl md:hidden block ${
+              toggle ? "animate-fadeOut" : "animate-fadeIn"
+            }`}
           ></AiOutlineMenu>
         )}
 
@@ -27,22 +31,22 @@ const Header = () => {
           </li>
           <li>
             <a href="" className="hover:text-yellow-500">
-              Home
+              Courses
             </a>
           </li>
           <li>
             <a href="" className="hover:text-yellow-500">
-              Home
+              About Us
             </a>
           </li>
           <li>
             <a href="" className="hover:text-yellow-500">
-              Home
+              Contact Us
             </a>
           </li>
           <li>
             <a href="" className="hover:text-yellow-500">
-              Home
+              Blogs
             </a>
           </li>
         </ul>
@@ -59,22 +63,22 @@ const Header = () => {
           </li>
           <li className="p-3 hover:bg-gray-700">
             <a href="" className="hover:text-yellow-500">
-              Home
+              Courses
             </a>
           </li>
           <li className="p-3 hover:bg-gray-700">
             <a href="" className="hover:text-yellow-500">
-              Home
+              About Us
             </a>
           </li>
           <li className="p-3 hover:bg-gray-700">
             <a href="" className="hover:text-yellow-500">
-              Home
+              Contact Us
             </a>
           </li>
           <li className="p-3 hover:bg-gray-700">
             <a href="" className="hover:text-yellow-500">
-              Home
+              Blogs
             </a>
           </li>
         </ul>
